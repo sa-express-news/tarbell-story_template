@@ -1,0 +1,87 @@
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    {# Brand and toggle get grouped for better mobile display #}
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://expressnews.com"></a>
+    </div>
+
+    {# Collect the nav links, forms, and other content for toggling #}
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <div class="nav-tophat">
+		  <ul class="nav navbar-nav">
+			<li></li>
+			{% if series_name %}
+			<li class="dropdown">
+			  <a href="{{ series_link }}" class="dropdown-toggle" data-toggle="dropdown" id="nav-sectionhed">{{ series_name }}<b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				{% if part1_name %}
+				<li><a href="{{ part1_link }}">{{ part1_name }}</a></li>
+				{% endif %}
+				{% if part2_name %}
+				<li><a href="{{ part2_link }}">{{ part2_name }}</a></li>
+				{% endif %}
+				{% if part3_name %}
+				<li><a href="{{ part3_link }}">{{ part3_name }}</a></li>
+				{% endif %}
+				{% if part4_name %}
+				<li><a href="{{ part4_link }}">{{ part4_name }}</a></li>
+				{% endif %}
+			  </ul>
+			</li>
+			{% endif %}
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="nav-sectionhed">ExpressNews.com<b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				<li><a href="http://www.expressnews.com/news/local/">Local</a></li>
+				<li><a href="http://www.expressnews.com/news/en_investigates/">Investigations</a></li>
+				<li><a href="http://www.expressnews.com/news/us-world/">U.S. & World</a></li>
+				<li><a href="http://www.expressnews.com/opinion/">Opinion</a></li>
+				<li><a href="http://www.expressnews.com/business/">Business News</a></li>
+				<li><a href="http://www.expressnews.com/sports/">Sports</a></li>
+				<li><a href="http://www.expressnews.com/entertainment/">Arts & Entertainment</a></li>
+				<li><a href="http://www.expressnews.com/lifestyle/">Home & Life</a></li>
+				<li><a href="http://www.expressnews.com/food/">Food</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</div>
+      <ul class="social-menu nav navbar-nav navbar-right">
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="https://www.facebook.com/sharer.php?u={{ ROOT_URL }}/{{ PATH }}&t={{ title|urlencode }}" class="facebook-icon">
+                  <span class="hidden">Facebook</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if twitter_description %}
+          <li>
+              <a target="_blank" href="https://twitter.com/share?url={{ ROOT_URL }}/{{ PATH }}&text={{ twitter_description|urlencode }}" class="twitter-icon">
+                <span class="hidden">Twitter</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="https://plus.google.com/share?url={{ ROOT_URL }}/{{ PATH }}" class="gplus-icon">
+                <span class="hidden">Google+</span>
+              </a>
+          </li>
+          {% endif %}
+          {% if opengraph_description and opengraph_image %}
+          <li>
+              <a target="_blank" href="http://pinterest.com/pin/create/button/?url={{ ROOT_URL }}/{{ PATH }}&media={{ opengraph_image }}&description={{ opengraph_description|urlencode }}" class="pin-it-button" count-layout="horizontal">
+                  <i class="icon-white icon-pinterest-sign"></i> <span class="hidden">Pinterest</span>
+              </a>
+          </li>
+          {% endif %}
+      </ul>
+
+    </div>{# /.navbar-collapse #}
+  </div>
+</nav>
