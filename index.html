@@ -1,12 +1,28 @@
 {% extends "_base.html" %}
 
 {% block content %}
+<!--Splash image will go here-->
 <div class="container">
-  <div class="jumbotron">
-    <h1>Welcome to your new project!</h1>
-    <p>Replace this message with your own content in <code>{{ PROJECT_PATH }}/index.html</code>.</p>
-    <p>Learn more on the <a href="_example.html">example page</a>.</p>
-  </div>
+    <h1>{{ headline }}</h1>
+    <h2>{{ deck_head }}</h2>
+    <div class="byline">{{ byline }}</div>
+    <div class="byline-credit">{{ byline_credit }}</div>
+    <div class="story-container">
+    	<div class="story">
+    		{{ section1|markdown }}
+    	</div>
+    	<div class="right-rail"></div>
+    </div>
+</div>
+<!--container 2 image or other content will go here-->
+<div class="container">
+    <h2>{{ subhead2 }}</h2>
+    <p>
+    	{{ section2|markdown }}
+    </p>
+    </div>
+    <div class="right-rail"></div>
+	<p>Learn more on the <a href="_example.html">example page</a>.</p>
 </div>
 {% endblock content %}
 
