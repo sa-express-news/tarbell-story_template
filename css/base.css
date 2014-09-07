@@ -99,3 +99,8 @@ body {
 	margin-left:2.5%;
 	bottom: 0px;
 	}
+
+#deckhead {
+	align:left;
+	width:80%;
+}
