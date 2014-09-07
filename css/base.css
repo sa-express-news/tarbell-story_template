@@ -1,4 +1,7 @@
-body { padding-top: 50px; }
+body { 
+	padding-top: 50px; 
+	font-family: Georgia, Serif;
+}
 
 /*styling for nav*/
 .navbar-brand {
