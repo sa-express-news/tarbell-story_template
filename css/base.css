@@ -82,16 +82,16 @@ body { padding-top: 50px; }
 	
 #splash-hed {
 	z-index: 100;
-	width: 50%;
-	max-height: 250px;
+	width: 70%;
+	max-height: auto;
 	position: absolute;
 	color: #FFFFFF;
 	font-family: Arial, sans-serif;
-	font-size: 6vw;
+	font-size: 8vw;
 	font-weight: bold;
 	text-transform: uppercase;
 	text-align: left;
 	text-shadow: 1px 1px 0px #000000;
 	margin-left:2.5%;
-	bottom: 0px;
+	bottom: 10px;
 	}
