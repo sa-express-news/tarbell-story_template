@@ -70,6 +70,18 @@ body {
 	margin-right: 5px;
 }
 
+.email-icon {
+	background-image: url(images/social-media/email.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	vertical-align: middle;
+	min-width: 35px;
+	height: 50px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	}
+
 /*body*/
 .splash-container {
 	width: 100%;

@@ -80,6 +80,15 @@
               </a>
           </li>
           {% endif %}
+
+          {% if twitter_description %}
+          <li>
+          	<a target="blank" href="mailto:?subject=Story%20worth%20reading%20from%20the%20Express-News&body={{ twitter_description }}%20{{ ROOT_URL }}/{{ PATH }}" class="email-icon">
+          	 <span class="hidden">Email</span>
+          	</a>
+          </li>	
+          {% endif %}
+
       </ul>
 
     </div>{# /.navbar-collapse #}
