@@ -96,12 +96,13 @@ body {
 	text-transform: uppercase;
 	text-align: left;
 	text-shadow: 1px 1px 0px #000000;
-	margin-left:2.5%;
 	bottom: -5px;
 	}
 
 #deckhead {
+	display: block;
 	padding-top: 10px;
-	align:left;
-	font-size: 36px;
+	padding-bottom: 10px;
+	font-size: 2.25em;
+	line-height: 1.25em; 
 }
