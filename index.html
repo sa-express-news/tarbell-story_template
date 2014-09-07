@@ -16,7 +16,15 @@
     	<div class="story">
     		{{ section1|markdown }}
     	</div>
-    	<div class="right-rail"></div>
+    	<div class="right-rail">
+    		{% if s1pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">"</div>
+    			<div class="quote">{{ s1pullquote }}</div>
+    			<div class="quote-credit"> - {{ s1quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    	</div>
     	<div style="clear: both;"></div>
     </div>
 </div>

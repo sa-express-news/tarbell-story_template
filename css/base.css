@@ -110,14 +110,7 @@ body {
 	text-shadow: 1px 1px 0px #000000;
 	bottom: -5px;
 	}
-
-#deckhead {
-	display: block;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 2.25em;
-	}
-
+	
 #deckhead {
 	display: block;
 	padding-top: 10px;
@@ -158,15 +151,16 @@ body {
 .story {
 	float: left;
 	width: 70%;
+	border-right-style: solid;
+	border-width: 1px;
+	border-color: #A0A0A0;
+	padding-right: 10px;
+	margin-right: 10px;
+
 	}
 
 .right-rail {
 	float: left;
 	width: 25%;
-	padding-left: 1.5%;
-	border-left-style: solid;
-	border-width: 1px;
-	margin-left: 1.5%;
-	border-color: #787878;
 	}
 
