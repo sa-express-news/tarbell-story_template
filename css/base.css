@@ -104,6 +104,13 @@ body {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 2.25em;
+	}
+
+#deckhead {
+	display: block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 2.25em;
 	line-height: 1.25em; 
 }
 
