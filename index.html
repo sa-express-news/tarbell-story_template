@@ -24,19 +24,52 @@
     			<div class="quote-credit"> - {{ s1quote_credit }}</div>
     		</div>
     		{% endif %}
+    		{% if sect1_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s1_doc1_tease %}
+						<li><a href="{{ sect1_doc1_link }}">{{ s1_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s1_doc2_tease %}
+						<li><a href="{{ sect1_doc2_link }}">{{ s1_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s1_doc3_tease %}
+						<li><a href="{{ sect1_doc3_link }}">{{ s1_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s1_doc4_tease %}
+						<li><a href="{{ sect1_doc4_link }}">{{ s1_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
     	</div>
     	<div style="clear: both;"></div>
     </div>
 </div>
 <!--container 2 image or other content will go here-->
 <div class="container">
-    <h2>{{ subhead2 }}</h2>
-    <p>
-    	{{ section2|markdown }}
-    </p>
-    </div>
-    <div class="right-rail"></div>
-	<p>Learn more on the <a href="_example.html">example page</a>.</p>
+	<div class="story-container">
+    	<h2>{{ subhead2 }}</h2>
+    	<div class="story">
+    		{{ section2|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		{% if s2pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s2pullquote }}</div>
+    			<div class="quote-credit"> - {{ s2quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		{% if section1doc %}
+    		<div class="doc-container">
+    		</div>
+    		{% endif %}
+    	</div>
+    	<div style="clear: both;"></div>
 </div>
 {% endblock content %}
 
