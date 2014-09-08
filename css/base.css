@@ -229,6 +229,7 @@ body {
 
 .doc-list {
 	padding-top: 5px;
+	color:#000000; 
 	}
 
 .doc-list ul li {
@@ -238,13 +239,12 @@ body {
 .doc-list li {
 	padding-top: 5px;
 	}
-
+	
 .doc-list a:link {
-	color:#000000;
 	text-decoration: none;
 	}
 
 .doc-list a:hover {
-	color:#000000;
+	color:#000000 !important;
 	text-decoration: none;
 	}

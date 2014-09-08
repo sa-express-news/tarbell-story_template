@@ -30,16 +30,16 @@
     			<div class="doc-list">
 					<ul>
 						{% if s1_doc1_tease %}
-						<li><a href="{{ sect1_doc1_link }}">{{ s1_doc1_tease }}</a></li>
+						<li><a href="{{ sect1_doc1_link }}" class="doc-list">{{ s1_doc1_tease }}</a></li>
 						{% endif %}
 						{% if s1_doc2_tease %}
-						<li><a href="{{ sect1_doc2_link }}">{{ s1_doc2_tease }}</a></li>
+						<li><a href="{{ sect1_doc2_link }}" class="doc-list">{{ s1_doc2_tease }}</a></li>
 						{% endif %}
 						{% if s1_doc3_tease %}
-						<li><a href="{{ sect1_doc3_link }}">{{ s1_doc3_tease }}</a></li>
+						<li><a href="{{ sect1_doc3_link }}" class="doc-list">{{ s1_doc3_tease }}</a></li>
 						{% endif %}
 						{% if s1_doc4_tease %}
-						<li><a href="{{ sect1_doc4_link }}">{{ s1_doc4_tease }}</a></li>
+						<li><a href="{{ sect1_doc4_link }}" class="doc-list">{{ s1_doc4_tease }}</a></li>
 						{% endif %}
 					</ul>
     			</div>
@@ -64,8 +64,25 @@
     			<div class="quote-credit"> - {{ s2quote_credit }}</div>
     		</div>
     		{% endif %}
-    		{% if section1doc %}
+    		{% if sect2_doc1_link %}
     		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s2_doc1_tease %}
+						<li><a href="{{ sect2_doc1_link }}" class="doc-list">{{ s2_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s2_doc2_tease %}
+						<li><a href="{{ sect2_doc2_link }}" class="doc-list">{{ s2_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s2_doc3_tease %}
+						<li><a href="{{ sect2_doc3_link }}" class="doc-list">{{ s2_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s2_doc4_tease %}
+						<li><a href="{{ sect2_doc4_link }}" class="doc-list">{{ s2_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
     		</div>
     		{% endif %}
     	</div>
