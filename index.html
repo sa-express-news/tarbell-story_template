@@ -45,6 +45,13 @@
     			</div>
     		</div>
     		{% endif %}
+    		{% if factbox_hed1 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed1 }}</div>
+    			<div class="factbox">{{ factbox_sec1|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c1 }}</div>
+    		</div>
+    		{% endif %}
     	</div>
     	<div style="clear: both;"></div>
     </div>
