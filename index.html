@@ -45,6 +45,7 @@
     			</div>
     		</div>
     		{% endif %}
+    		<!--factbox-->
     		{% if factbox_hed1 %}
     		<div class="factbox-container">
     			<div class="rail-hed">{{ factbox_hed1 }}</div>
@@ -52,6 +53,21 @@
     			<div class="credit-line">Source: {{ factbox_c1 }}</div>
     		</div>
     		{% endif %}
+    		<!--sidebar-->
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed1 }}</div>
+    			<div class="chatter">{{ sidebar_chatter1 }}</div>
+    			{% if sidebar_img1 %}
+    				<div class="sidebarimg"><img src="{{ sidebar_img1 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div1 %}
+    				<div class="{{ sidebar_div1 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source1 }}
+					<br>{{ sidebar_credit1 }}
+    			</div>
+    		</div>
     	</div>
     	<div style="clear: both;"></div>
     </div>
