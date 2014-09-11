@@ -74,6 +74,7 @@
     	<div style="clear: both;"></div>
     </div>
 </div>
+{% if section2image %}
 <div class="splash-container">
 	<img id="splash-image" src="{{ section2image }}" alt="{{ splash_img_desc }}" />
 	<div class="img-cap-container">
@@ -81,6 +82,7 @@
 	<div class="photo-caption">{{ section2imagecap }}</div>
 	</div>
 </div>
+{% endif %}
 <div class="container">
 	<div class="story-container">
     	<h2>{{ subhead2 }}</h2>
