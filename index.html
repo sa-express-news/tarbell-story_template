@@ -74,12 +74,13 @@
     	<div style="clear: both;"></div>
     </div>
 </div>
+<!--chapter splash-->
 {% if section2image %}
 <div class="splash-container">
-	<img id="splash-image" src="{{ section2image }}" alt="{{ splash_img_desc }}" />
+	<img id="splash-image" src="{{ section2image }}" alt="{{ section2imagecap }}" />
 	<div class="img-cap-container">
-	<div class="photo-credit">{{ section2imagecredit }}</div>
-	<div class="photo-caption">{{ section2imagecap }}</div>
+		<div class="photo-credit">{{ section2imagecredit }}</div>
+		<div class="photo-caption">{{ section2imagecap }}</div>
 	</div>
 </div>
 {% endif %}
@@ -142,6 +143,382 @@
     			<div class="credit-line">
 					Source: {{ sidebar_source2 }}
 					<br>{{ sidebar_credit2 }}
+    			</div>
+    			{% endif %}
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</div>
+<!--chapter splash-->
+{% if section3image %}
+<div class="splash-container">
+	<img id="splash-image" src="{{ section3image }}" alt="{{ section3imagecap }}" />
+	<div class="img-cap-container">
+		<div class="photo-credit">{{ section3imagecredit }}</div>
+		<div class="photo-caption">{{ section3imagecap }}</div>
+	</div>
+</div>
+{% endif %}
+<div class="container">
+	<div class="story-container">
+    	<h2>{{ subhead3 }}</h2>
+    	<div class="story">
+    		{{ section3|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		<!--pullquote-->
+    		{% if s3pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s3pullquote }}</div>
+    			<div class="quote-credit"> - {{ s3quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		<!--doclinks-->
+    		{% if sect3_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s3_doc1_tease %}
+						<li><a href="{{ sect3_doc1_link }}" class="doc-list">{{ s3_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s3_doc2_tease %}
+						<li><a href="{{ sect3_doc2_link }}" class="doc-list">{{ s3_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s3_doc3_tease %}
+						<li><a href="{{ sect3_doc3_link }}" class="doc-list">{{ s3_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s2_doc4_tease %}
+						<li><a href="{{ sect3_doc4_link }}" class="doc-list">{{ s3_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed3 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed3 }}</div>
+    			<div class="factbox">{{ factbox_sec3|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c3 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed3 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed3 }}</div>
+    			<div class="chatter">{{ sidebar_chatter3 }}</div>
+    			{% if sidebar_img3 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img3 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div3 %}
+    				<div class="{{ sidebar_div3 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source3 }}
+					<br>{{ sidebar_credit3 }}
+    			</div>
+    			{% endif %}
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</div>
+{% if section4image %}
+<div class="splash-container">
+	<img id="splash-image" src="{{ section4image }}" alt="{{ section4imagecap }}" />
+	<div class="img-cap-container">
+		<div class="photo-credit">{{ section4imagecredit }}</div>
+		<div class="photo-caption">{{ section4imagecap }}</div>
+	</div>
+</div>
+{% endif %}
+<div class="container">
+	<div class="story-container">
+    	<h2>{{ subhead4 }}</h2>
+    	<div class="story">
+    		{{ section4|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		<!--pullquote-->
+    		{% if s4pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s4pullquote }}</div>
+    			<div class="quote-credit"> - {{ s4quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		<!--doclinks-->
+    		{% if sect4_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s4_doc1_tease %}
+						<li><a href="{{ sect4_doc1_link }}" class="doc-list">{{ s4_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s4_doc2_tease %}
+						<li><a href="{{ sect4_doc2_link }}" class="doc-list">{{ s4_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s4_doc3_tease %}
+						<li><a href="{{ sect4_doc3_link }}" class="doc-list">{{ s4_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s4_doc4_tease %}
+						<li><a href="{{ sect4_doc4_link }}" class="doc-list">{{ s4_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed4 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed4 }}</div>
+    			<div class="factbox">{{ factbox_sec4|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c4 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed4 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed4 }}</div>
+    			<div class="chatter">{{ sidebar_chatter4 }}</div>
+    			{% if sidebar_img4 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img4 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div4 %}
+    				<div class="{{ sidebar_div4 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source4 }}
+					<br>{{ sidebar_credit4 }}
+    			</div>
+    			{% endif %}
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</div>
+{% if section5image %}
+<div class="splash-container">
+	<img id="splash-image" src="{{ section5image }}" alt="{{ section5imagecap }}" />
+	<div class="img-cap-container">
+		<div class="photo-credit">{{ section5imagecredit }}</div>
+		<div class="photo-caption">{{ section5imagecap }}</div>
+	</div>
+</div>
+{% endif %}
+<div class="container">
+	<div class="story-container">
+    	<h2>{{ subhead5 }}</h2>
+    	<div class="story">
+    		{{ section5|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		<!--pullquote-->
+    		{% if s5pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s5pullquote }}</div>
+    			<div class="quote-credit"> - {{ s5quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		<!--doclinks-->
+    		{% if sect5_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s5_doc1_tease %}
+						<li><a href="{{ sect5_doc1_link }}" class="doc-list">{{ s5_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc2_tease %}
+						<li><a href="{{ sect5_doc2_link }}" class="doc-list">{{ s5_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc3_tease %}
+						<li><a href="{{ sect5_doc3_link }}" class="doc-list">{{ s5_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc4_tease %}
+						<li><a href="{{ sect5_doc4_link }}" class="doc-list">{{ s5_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed5 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed5 }}</div>
+    			<div class="factbox">{{ factbox_sec5|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c5 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed5 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed5 }}</div>
+    			<div class="chatter">{{ sidebar_chatter5 }}</div>
+    			{% if sidebar_img5 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img5 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div5 %}
+    				<div class="{{ sidebar_div5 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source5 }}
+					<br>{{ sidebar_credit5 }}
+    			</div>
+    			{% endif %}
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</div>
+{% if section6image %}
+<div class="splash-container">
+	<img id="splash-image" src="{{ section6image }}" alt="{{ section6imagecap }}" />
+	<div class="img-cap-container">
+		<div class="photo-credit">{{ section6imagecredit }}</div>
+		<div class="photo-caption">{{ section6imagecap }}</div>
+	</div>
+</div>
+{% endif %}
+<div class="container">
+	<div class="story-container">
+    	<h2>{{ subhead6 }}</h2>
+    	<div class="story">
+    		{{ section6|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		<!--pullquote-->
+    		{% if s6pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s6pullquote }}</div>
+    			<div class="quote-credit"> - {{ s6quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		<!--doclinks-->
+    		{% if sect6_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s6_doc1_tease %}
+						<li><a href="{{ sect6_doc1_link }}" class="doc-list">{{ s6_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s6_doc2_tease %}
+						<li><a href="{{ sect6_doc2_link }}" class="doc-list">{{ s6_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s6_doc3_tease %}
+						<li><a href="{{ sect6_doc3_link }}" class="doc-list">{{ s6_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s6_doc4_tease %}
+						<li><a href="{{ sect6_doc4_link }}" class="doc-list">{{ s6_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed6 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed6 }}</div>
+    			<div class="factbox">{{ factbox_sec6|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c6 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed6 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed6 }}</div>
+    			<div class="chatter">{{ sidebar_chatter6 }}</div>
+    			{% if sidebar_img6 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img6 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div6 %}
+    				<div class="{{ sidebar_div6 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source6 }}
+					<br>{{ sidebar_credit6 }}
+    			</div>
+    			{% endif %}
+    		</div>
+    	</div>
+    	<div style="clear: both;"></div>
+    </div>
+</div>
+{% if section7image %}
+<div class="splash-container">
+	<img id="splash-image" src="{{ section7image }}" alt="{{ section7imagecap }}" />
+	<div class="img-cap-container">
+		<div class="photo-credit">{{ section7imagecredit }}</div>
+		<div class="photo-caption">{{ section7imagecap }}</div>
+	</div>
+</div>
+{% endif %}
+<div class="container">
+	<div class="story-container">
+    	<h2>{{ subhead7 }}</h2>
+    	<div class="story">
+    		{{ section7|markdown }}
+    	</div>
+    	<div class="right-rail">
+    		<!--pullquote-->
+    		{% if s7pullquote %}
+    		<div class="pullquote-container">
+    			<div class="quotemark">&#8220;</div>
+    			<div class="quote">{{ s7pullquote }}</div>
+    			<div class="quote-credit"> - {{ s7quote_credit }}</div>
+    		</div>
+    		{% endif %}
+    		<!--doclinks-->
+    		{% if sect7_doc1_link %}
+    		<div class="doc-container">
+    			<div class="rail-hed">Read the documents</div>
+    			<div class="doc-list">
+					<ul>
+						{% if s7_doc1_tease %}
+						<li><a href="{{ sect7_doc1_link }}" class="doc-list">{{ s7_doc1_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc2_tease %}
+						<li><a href="{{ sect7_doc2_link }}" class="doc-list">{{ s7_doc2_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc3_tease %}
+						<li><a href="{{ sect7_doc3_link }}" class="doc-list">{{ s7_doc3_tease }}</a></li>
+						{% endif %}
+						{% if s5_doc4_tease %}
+						<li><a href="{{ sect7_doc4_link }}" class="doc-list">{{ s7_doc4_tease }}</a></li>
+						{% endif %}
+					</ul>
+    			</div>
+    		</div>
+    		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed7 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed7 }}</div>
+    			<div class="factbox">{{ factbox_sec7|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c7 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed7 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed7 }}</div>
+    			<div class="chatter">{{ sidebar_chatter7 }}</div>
+    			{% if sidebar_img7 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img7 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div7 %}
+    				<div class="{{ sidebar_div7 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source7 }}
+					<br>{{ sidebar_credit7 }}
     			</div>
     			{% endif %}
     		</div>
