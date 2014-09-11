@@ -59,7 +59,7 @@
     			<div class="rail-hed">{{ sidebar_hed1 }}</div>
     			<div class="chatter">{{ sidebar_chatter1 }}</div>
     			{% if sidebar_img1 %}
-    				<div class="sidebarimg"><img src="{{ sidebar_img1 }}" /></div>
+    				<div class="sidebar-img"><img src="{{ sidebar_img1 }}" /></div>
     			{% endif %}
     			{% if sidebar_div1 %}
     				<div class="{{ sidebar_div1 }}"></div>
@@ -76,6 +76,10 @@
 </div>
 <div class="splash-container">
 	<img id="splash-image" src="{{ section2image }}" alt="{{ splash_img_desc }}" />
+	<div class="img-cap-container">
+	<div class="photo-credit">{{ section2imagecredit }}</div>
+	<div class="photo-caption">{{ section2imagecap }}</div>
+	</div>
 </div>
 <div class="container">
 	<div class="story-container">
@@ -84,6 +88,7 @@
     		{{ section2|markdown }}
     	</div>
     	<div class="right-rail">
+    		<!--pullquote-->
     		{% if s2pullquote %}
     		<div class="pullquote-container">
     			<div class="quotemark">&#8220;</div>
@@ -91,6 +96,7 @@
     			<div class="quote-credit"> - {{ s2quote_credit }}</div>
     		</div>
     		{% endif %}
+    		<!--doclinks-->
     		{% if sect2_doc1_link %}
     		<div class="doc-container">
     			<div class="rail-hed">Read the documents</div>
@@ -112,8 +118,34 @@
     			</div>
     		</div>
     		{% endif %}
+    		<!--factbox-->
+    		{% if factbox_hed2 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ factbox_hed2 }}</div>
+    			<div class="factbox">{{ factbox_sec2|markdown }}</div>
+    			<div class="credit-line">Source: {{ factbox_c2 }}</div>
+    		</div>
+    		{% endif %}
+    		<!--sidebar-->
+    		{% if sidebar_hed2 %}
+    		<div class="factbox-container">
+    			<div class="rail-hed">{{ sidebar_hed2 }}</div>
+    			<div class="chatter">{{ sidebar_chatter2 }}</div>
+    			{% if sidebar_img2 %}
+    				<div class="sidebar-img"><img src="{{ sidebar_img2 }}" /></div>
+    			{% endif %}
+    			{% if sidebar_div2 %}
+    				<div class="{{ sidebar_div2 }}"></div>
+    			{% endif %}
+    			<div class="credit-line">
+					Source: {{ sidebar_source2 }}
+					<br>{{ sidebar_credit2 }}
+    			</div>
+    			{% endif %}
+    		</div>
     	</div>
     	<div style="clear: both;"></div>
+    </div>
 </div>
 {% endblock content %}
 
