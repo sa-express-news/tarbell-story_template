@@ -329,3 +329,17 @@ body {
 	padding-bottom: 5px;
 	text-align: left;
 	}
+
+.chapter-image-container {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	padding-top: 5px;
+	}
+	
+#chapter-image {
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	z-index: 0;
+	}
